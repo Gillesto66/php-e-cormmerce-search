@@ -1,0 +1,14 @@
+{
+  "name": "tagsearch/php-engine",
+  "description": "In-memory tag search engine for e-commerce (DAWG + BM25 + hybrid ranking)",
+  "type": "library",
+  "require": { "php": ">=8.2" },
+  "require-dev": { "phpunit/phpunit": "^11.0" },
+  "autoload": {
+    "psr-4": { "TagSearch\\": "src/" },
+    "files": ["src/ScoringConstants.php"]
+  },
+  "autoload-dev": {
+    "psr-4": { "TagSearch\\Tests\\": "tests/" }
+  }
+}
